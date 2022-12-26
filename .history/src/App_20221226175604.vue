@@ -10,7 +10,7 @@ export default {
     const normalMessage = 'Hello Normal Message'
     return {
       reactiveMessage,
-      normalMessage  
+      normalMessage
     }
   }
 };
