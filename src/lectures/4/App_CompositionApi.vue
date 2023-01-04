@@ -10,37 +10,37 @@
 </template>
 
 <script>
-import { isRef, onUpdated, ref } from "vue";
+import {isRef, onUpdated, ref} from 'vue'
 
 export default {
   setup() {
     // 반응형 상태 선언
-    const reactiveMessage = ref("Reactive Message");
+    const reactiveMessage = ref('Reactive Message')
     // 일반 변수 선언
-    let normalMessage = "Normal Message";
+    let normalMessage = 'Normal Message'
 
-    console.log("isRef(reactiveMessage): ", isRef(reactiveMessage)); // true
-    console.log("isRef(normalMessage): ", isRef(normalMessage)); // false
+    console.log('isRef(reactiveMessage): ', isRef(reactiveMessage)) // true
+    console.log('isRef(normalMessage): ', isRef(normalMessage)) // false
 
     const addReactiveMesssage = () => {
-      reactiveMessage.value = reactiveMessage.value + "!";
-    };
+      reactiveMessage.value = reactiveMessage.value + '!'
+    }
     const addNormalMesssage = () => {
-      normalMessage = normalMessage + "!";
-    };
+      normalMessage = normalMessage + '!'
+    }
 
     onUpdated(() => {
-      console.log("update component");
-    });
+      console.log('update component')
+    })
 
     return {
       reactiveMessage,
       normalMessage,
       addReactiveMesssage,
-      addNormalMesssage,
-    };
-  },
-};
+      addNormalMesssage
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped></style>

@@ -8,18 +8,18 @@
 export default {
   data() {
     return {
-      counter: 0,
-    };
+      counter: 0
+    }
   },
   methods: {
     increment() {
-      this.counter++;
-    },
+      this.counter++
+    }
   },
   mounted() {
-    console.log("애플리케이션이 마운트 되었습니다!");
-  },
-};
+    console.log('애플리케이션이 마운트 되었습니다!')
+  }
+}
 </script>
 
 <style lang="scss" scoped></style>
