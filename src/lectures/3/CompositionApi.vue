@@ -19,6 +19,7 @@ export default {
 
     return {
       counter,
+
       increment
     }
   }
