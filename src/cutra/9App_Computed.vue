@@ -29,7 +29,7 @@ export default {
       return company.member.length > 0 ? 'true' : 'false'
     })
 
-    // 이것은 함수이기 때문에 위에 rendering 할 때 ()를 넣어줘야함
+    // 이것은 함수이기 때문에 위에 html에 rendering 할 때 ()를 넣어줘야함
     const existMember = () => {
       console.log('method')
       return company.member.length > 0 ? 'true' : 'false'
