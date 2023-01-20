@@ -1,17 +1,21 @@
-<template lang="">
+<script setup></script>
+<template>
   <div>
-
+    <TheNav />
+    <TheView />
   </div>
 </template>
 <script>
-import {ref, reactive, isRef, toRefs, toRef, readonly, computed} from 'vue'
+import TheNav from '@/components/TheNav.vue'
+import TheView from '@/components/TheView.vue'
+import {ref, reactive, isRef, toRefs, toRef, readonly, computed, watch} from 'vue'
 export default {
+  components: {
+    TheNav,
+    TheView
+  },
   setup(props) {
-    const message = ref('Message')
-
-    return {
-      message
-    }
+    return {}
   }
 }
 </script>
