@@ -38,7 +38,7 @@ export default {
     },
     obj: {
       type: Object,
-      default: () => {}
+      default: () =>
     }
   },
   setup(props) {

@@ -36,10 +36,7 @@ export default {
       type: Boolean,
       default: false
     },
-    obj: {
-      type: Object,
-      default: () => {}
-    }
+    obj: 
   },
   setup(props) {
     return {}

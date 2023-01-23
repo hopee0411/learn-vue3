@@ -35,10 +35,6 @@ export default {
     isLike: {
       type: Boolean,
       default: false
-    },
-    obj: {
-      type: Object,
-      default: () => {}
     }
   },
   setup(props) {

@@ -20,7 +20,7 @@ export default {
     type: {
       type: String,
       default: 'news',
-      validator: (value) => {
+      validator: value => {
         return ['news', 'notice'].includes(value)
       }
     },
@@ -35,10 +35,6 @@ export default {
     isLike: {
       type: Boolean,
       default: false
-    },
-    obj: {
-      type: Object,
-      default: () => {}
     }
   },
   setup(props) {
