@@ -33,3 +33,13 @@ npm run build
 ```sh
 npm run lint
 ```
+<!--
+  전체 파일 자동정렬 검사 및 수정 : npm run lint
+  개별 파일 자동 정력 shift + alt + f
+  VSCode -> file -> Preferences - Settings -> eol 검색 /n(lf)로 변경
+  vs협업 시 필요 한 세팅들
+    ­▶ .vscode/settings.js
+    ▶ .editorconfig
+    ▶ .eslintrc.cjs
+    ▶ .prettierrc.json
+-->

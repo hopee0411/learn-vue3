@@ -1,0 +1,14 @@
+<template>
+  <div></div>
+</template>
+
+<script>
+import { ref } from 'vue';
+export default {
+  setup() {
+    const reactiveMessage = ref('Hello Reactive Message')
+  }
+};
+</script>
+
+<style lang="scss" scoped></style>

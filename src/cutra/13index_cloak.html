@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+    <style>
+      [v-cloak] {
+        display: none;
+      }
+    </style>
+  </head>
+  <script src="https://unpkg.com/vue@next"></script>
+  <body>
+    <div id="app">
+      <p v-cloak>{{ message }}</p>
+    </div>
+  </body>
+  <script>
+    const App = {
+      data() {
+        return {
+          message: '안녕'
+        }
+      },
+    }
+    setTimeout(() => {
+      Vue.createApp(App).mount("#app")
+    }, 3000)
+
+  </script>
+</html>
